@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.10.0 on win32)" generated="20211013 22:42:02.495" rpa="false" schemaversion="2">
+<suite id="s1" name="Faker" source="C:\Users\muham\PycharmProjects\AmazonTest\resources\po\faker.robot">
+<test id="s1-t1" name="create session">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211013 22:42:03.213" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211013 22:42:03.213" endtime="20211013 22:42:04.617"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211013 22:42:04.618" endtime="20211013 22:42:04.734"/>
+</kw>
+<status status="PASS" starttime="20211013 22:42:03.213" endtime="20211013 22:42:04.734"/>
+</test>
+<test id="s1-t2" name="go to home page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.amazon.com.tr/ap/register?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com.tr%2F%3F%26tag%3Dtrtxtgoabkde-21%26ref%3Dnav_ya_signin%26adgrpid%3D119366379979%26hvpone%3D%26hvptwo%3D%26hvadid%3D542862704348%26hvpos%3D%26hvnetw%3Dg%26hvrand%3D15656260967529554164%26hvqmt%3De%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D1012782%26hvtargid%3Dkwd-10573980%26hydadcr%3D12932_2246093%26gclid%3DCjwKCAjwh5qLBhALEiwAioods3N3Yaej7n6QCsM5tPblGQM7sCRrse6F8iwjJWb4OwkfMzCuwXwT1xoCKDkQAvD_BwE%26language%3Dtr_TR&amp;prevRID=4A8JKHFTQV6BZ8N40Q9H&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=trflex&amp;openid.mode=checkid_setup&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=trflex&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211013 22:42:04.734" level="INFO">Opening url 'https://www.amazon.com.tr/ap/register?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com.tr%2F%3F%26tag%3Dtrtxtgoabkde-21%26ref%3Dnav_ya_signin%26adgrpid%3D119366379979%26hvpone%3D%26hvptwo%3D%26hvadid%3D542862704348%26hvpos%3D%26hvnetw%3Dg%26hvrand%3D15656260967529554164%26hvqmt%3De%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D1012782%26hvtargid%3Dkwd-10573980%26hydadcr%3D12932_2246093%26gclid%3DCjwKCAjwh5qLBhALEiwAioods3N3Yaej7n6QCsM5tPblGQM7sCRrse6F8iwjJWb4OwkfMzCuwXwT1xoCKDkQAvD_BwE%26language%3Dtr_TR&amp;prevRID=4A8JKHFTQV6BZ8N40Q9H&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=trflex&amp;openid.mode=checkid_setup&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=trflex&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0'</msg>
+<status status="PASS" starttime="20211013 22:42:04.734" endtime="20211013 22:42:07.303"/>
+</kw>
+<status status="PASS" starttime="20211013 22:42:04.734" endtime="20211013 22:42:07.303"/>
+</test>
+<test id="s1-t3" name="login">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=ap_customer_name</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211013 22:42:07.305" endtime="20211013 22:42:07.331"/>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<var>${ad}</var>
+<msg timestamp="20211013 22:42:07.332" level="INFO">${ad} = Erika</msg>
+<status status="PASS" starttime="20211013 22:42:07.332" endtime="20211013 22:42:07.332"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${soyad}</var>
+<msg timestamp="20211013 22:42:07.333" level="INFO">${soyad} = Zimmerman</msg>
+<status status="PASS" starttime="20211013 22:42:07.333" endtime="20211013 22:42:07.333"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=ap_customer_name</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211013 22:42:07.334" level="INFO">Clicking element 'id=ap_customer_name'.</msg>
+<status status="PASS" starttime="20211013 22:42:07.333" endtime="20211013 22:42:07.388"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=ap_customer_name</arg>
+<arg>Muhammed DURMUS</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211013 22:42:07.389" level="INFO">Typing text 'Muhammed DURMUS' into text field 'id=ap_customer_name'.</msg>
+<status status="PASS" starttime="20211013 22:42:07.389" endtime="20211013 22:42:07.471"/>
+</kw>
+<kw name="Email" library="FakerLibrary">
+<var>${e-mail}</var>
+<msg timestamp="20211013 22:42:07.471" level="INFO">${e-mail} = nicole59@example.org</msg>
+<status status="PASS" starttime="20211013 22:42:07.471" endtime="20211013 22:42:07.472"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=ap_email</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211013 22:42:07.472" level="INFO">Clicking element 'id=ap_email'.</msg>
+<status status="PASS" starttime="20211013 22:42:07.472" endtime="20211013 22:42:07.529"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=ap_email</arg>
+<arg>${e-mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211013 22:42:07.530" level="INFO">Typing text 'nicole59@example.org' into text field 'id=ap_email'.</msg>
+<status status="PASS" starttime="20211013 22:42:07.530" endtime="20211013 22:42:07.633"/>
+</kw>
+<kw name="Password" library="FakerLibrary">
+<var>${password}</var>
+<arg>length=10</arg>
+<arg>special_chars=True</arg>
+<arg>digits=True</arg>
+<arg>upper_case=False</arg>
+<arg>lower_case=True</arg>
+<doc>Generate a random password of the specified ``length``.</doc>
+<msg timestamp="20211013 22:42:07.635" level="INFO">${password} = hdd4^7nc&amp;w</msg>
+<status status="PASS" starttime="20211013 22:42:07.634" endtime="20211013 22:42:07.635"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=ap_password</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211013 22:42:07.635" level="INFO">Clicking element 'id=ap_password'.</msg>
+<status status="PASS" starttime="20211013 22:42:07.635" endtime="20211013 22:42:07.698"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=ap_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211013 22:42:07.698" level="INFO">Typing text 'hdd4^7nc&amp;w' into text field 'id=ap_password'.</msg>
+<status status="PASS" starttime="20211013 22:42:07.698" endtime="20211013 22:42:08.161"/>
+</kw>
+<status status="PASS" starttime="20211013 22:42:07.304" endtime="20211013 22:42:08.162"/>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20211013 22:42:02.495" endtime="20211013 22:42:08.163"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Faker">Faker</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
